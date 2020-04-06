@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery and webfonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href=style.css>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+    
+</head>
+<body>
+  <div class="container">
+   <div class="paragraph">
+    <h1><p id="test">Click me!</p></h1>
+    <script>
+        $(document).ready(function() {
+            $("#test").click(function() {
+            alert("Clicked");
+        });
+    });
+        
+    </script> 
+    <p id="shy">I am shy.</p>
+        <script>
+       $(document).ready(function() {
+           $("#shy").click(function() {
+                $(this).hide();
+            });
+        });
+        </script>
+    </div>
+</div>
+</body>
+</html>
